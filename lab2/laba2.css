@@ -1,0 +1,56 @@
+body {
+  background-color:#3b4c6d;
+}
+
+#main-text{
+  font-family: 'American Captain', sans-serif;
+  color:whitesmoke;
+  text-align:center ;
+  padding-top: 20px;
+  font-size: 60px;
+}
+
+#under-text{
+  color:whitesmoke;
+  text-align:center ;
+  padding-top: 10px;
+  font-size: 20px;
+  width: 30%;
+  margin-left: 35% ;
+}
+
+.buttonetochoose  {
+  font-size: 30px;
+  font-family: 'American Captain', sans-serif;
+  color:whitesmoke;
+  background-color: #6c82ad;
+  border: 0px ;
+  border-radius: 10px;
+  padding: 18px;
+  cursor: pointer;
+  width: 70%;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+.megaphone{
+  width: 50%;
+}
+
+table{
+margin-left: 22%;
+
+
+}
+
+#down-text {
+  color: rgb(255, 255, 255);
+  text-align:center ;
+  padding-top: 50px;
+  padding-bottom: 150px ;
+  font-size: 20px;
+  cursor: pointer;
+ }
