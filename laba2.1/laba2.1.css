@@ -1,0 +1,176 @@
+body{
+
+    margin: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-image: url('gorod-port-korabli-situaciya.jpg');
+
+    background-size: cover;
+
+    background-position: center;
+
+    min-width: 1200px;
+
+    max-width: 2000px;
+
+    height: 100vh;
+
+    min-height: 800px;
+
+}
+
+.maintext{
+
+    text-transform: capitalize;
+
+    font-size: 50px;
+
+    text-align: center;
+
+    padding: 40px 0;
+
+    color: rgb(255, 115, 0);
+}
+
+.tere{
+
+    font-size: 50px;
+
+    text-align: center;
+
+    color: rgb(255, 115, 0);
+
+}
+
+.bottext{
+
+    font-size: 19px;
+
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+
+    padding: 20px 0;
+
+    width: 30%;
+
+    margin-left: 35%
+
+}
+
+.content{
+
+ margin-top: 30px;
+
+ margin-left: 20%;
+
+ width:60%;
+
+ min-width: 900px;
+
+ max-width: 1600px;
+
+ height: 400px;
+
+ min-height: 400px;
+
+ background-color: rgb(255, 255, 255);
+
+}
+
+.photo{
+
+    width: 100px ;
+    height: 100px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.photo2{
+
+    width: 100px ;
+    padding-top: 20px;
+    margin-left: 270px;
+}
+
+.photo3{
+
+    width: 100px ;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 290px;
+
+}
+
+.text1{
+
+    font-size: 30px;
+    color: gray;
+    margin-left: 160px;
+
+}
+
+.text2{
+
+    font-size: 30px;
+    color: gray;
+    margin-left: 280px;
+
+
+    
+}
+
+.text3{
+
+    font-size: 30px;
+    color: gray;
+    margin-left: 292px;
+    
+}
+
+.Lbottomtext2{
+    display: inline-flex;
+}
+
+.bottomtext1{
+
+    margin-left: 110px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+.bottomtext2{
+
+    margin-left: 210px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bottomtext3{
+
+    margin-left: 260px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#down-text {
+    color: rgb(255, 255, 255);
+    text-align:center ;
+    padding-top: 50px;
+    padding-bottom: 150px ;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 100px;
+   }
+
+.lowertext{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 20px;
+}
+  
