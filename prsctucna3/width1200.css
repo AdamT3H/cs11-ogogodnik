@@ -1,0 +1,76 @@
+.tabletext1{
+
+    width: 100px;
+
+    display: unset;
+
+}
+
+.tabletext{
+
+    font-size: 20px;
+
+    margin-left: 10px;
+
+}
+
+
+.logo{
+
+    display: none;
+
+}
+
+.button{
+
+    display: none;
+
+}
+
+.section1{
+
+    margin-left: 40%;
+
+}
+
+.maintext{
+
+    display: none;
+
+}
+
+.undertext2{
+
+    display: none;
+
+}
+
+.section3{
+
+    width: 70%;
+
+    margin-left: 200px;
+
+    margin-bottom: 30px;
+
+    position: absolute;
+
+    top: 20%
+    
+}
+
+.pict{
+
+    width: 20%;
+    
+    margin-left: 40%;
+    
+    position: absolute;
+
+    top: 65%
+    
+}
+
+
+
+

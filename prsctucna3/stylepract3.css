@@ -1,0 +1,192 @@
+body {
+
+    margin: 0px;
+
+    background-image: url(./FFTablet_1100x.progressive\ \(3\).webp) ;
+
+    background-size: cover;
+
+    background-position: bottom;
+
+}
+
+.table{
+   
+    border: 3px;
+
+    color: whitesmoke;
+
+    font-family: 'West Carabao', sans-serif;
+
+    font-size: 25px;
+
+    display: inline-block;
+                                                
+}
+
+.tabletext{
+
+    margin-left: 30px;
+
+    text-transform: uppercase;
+
+}
+
+.logo{
+
+    width: 50px;
+
+    margin-left: 210px;
+
+    display: inline-block;
+
+}
+
+.button{
+
+    font-family: 'West Carabao', sans-serif;
+
+    font-size: 25px;
+
+    display: inline-block;
+
+    border: solid; 
+
+    padding: 15px;
+
+    text-align: left;
+
+    margin-top: 20px ;
+
+    margin-left: 550px;
+
+    position: absolute;
+
+    color: whitesmoke;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.maintext{
+
+    color: whitesmoke;
+
+    font-family: 'West Carabao', sans-serif;
+
+    font-size: 160px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 30px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 0px ;
+
+}
+
+.undertext{
+
+    color: whitesmoke;
+
+    font-family: 'West Carabao', sans-serif;
+
+    font-size: 20px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 0px;
+
+    text-transform: uppercase;
+
+}
+
+.text{
+
+    color: whitesmoke;
+
+    font-size: 20px;
+
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+
+    margin-top: 0px;
+
+    text-transform: uppercase;
+
+}
+
+.section3{
+
+    width: 15%;
+
+    margin-left: 100px;
+
+    margin-bottom: 30px;
+
+    position: absolute;
+
+    top: 70%
+}
+
+.pict{
+
+    width: 20%;
+    
+    margin-left: 75%;
+    
+    position: absolute;
+
+    top: 65%
+    
+}
+
+.picture{
+
+    width: 100%;
+
+}
+
+.tabletext1{
+
+    width: 0px;
+
+    display: none;
+}
+
+.undertext2{
+
+    padding-top: 6px;
+
+    padding-left: 4px;
+    
+    padding-right: 4px;
+
+}
+
+.a{
+
+    padding-top: 6px;
+
+    padding-left: 4px;
+
+    padding-right: 4px;
+
+}
+
