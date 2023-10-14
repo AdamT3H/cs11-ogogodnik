@@ -1,0 +1,624 @@
+:root {
+    --main-yellow: #e8b846
+   }
+   
+   body {
+    margin: 0;
+    background-color: rgba(167, 166, 166, 0.655);
+   }
+   
+   * {
+    box-sizing: border-box;
+   }
+   
+   .section:nth-child(1) {
+    width:100%;
+    height: 80vh;
+    min-height: 700px;
+    background-image: url('./jhj-min.jpg');
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 40px;
+   
+    >div {
+     width:60%;
+     height: 80%;
+     margin: auto;
+   
+     color: whitesmoke;
+   
+     display: flex;
+     justify-content: end;
+   
+     .title,.description {
+      padding-top: 35px;
+     }
+   
+     .title {
+      width: 40%;
+      height: 100%;
+   
+      font-size: 2.5em;
+      font-weight: bolder;
+      border-right: 10px solid var(--main-yellow);
+     }
+   
+     .description {
+      width: 40%;
+      height: 100%;
+   
+      font-size: 1.25em;
+      margin-left: 20px;
+   
+      >div:last-child {
+       background-color: var(--main-yellow);
+       color: black;
+       border-radius: 10px;
+       padding: 20px 10px;
+       width: 50%;
+       text-align: center;
+   
+       font-size: 1em;
+       font-weight: bolder;
+       text-transform: uppercase;
+   
+       margin-top: 80px;
+      }
+     }
+    }
+   }
+   
+   .section:nth-child(2) {
+    width: 100%;
+    height: 250px;
+    background-color: #d9d9d9;
+   
+    display: flex;
+    justify-content: center;
+   
+    >.item {
+     width: 20%;
+     height: 100%;
+     margin: 0 5px;
+     border-radius: 5px;
+     background-color: whitesmoke;
+   
+     /* display: flex;
+     flex-direction: column;
+     align-items: center; */
+   
+     position: relative;
+     top: -40px;
+   
+     padding: 10px;
+   
+     box-shadow: 0px 0px 75px -18px rgba(0,0,0,1);
+   
+     >div:first-child {
+      margin: auto;
+      width: 40%;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background-color: var(--main-yellow);
+   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   
+      position: relative;
+      top: -40px;
+   
+      >img {
+       width: 45%;
+      }
+     }
+   
+     >div:nth-child(2) {
+      width:100%;
+      font-size: 1.25em;
+      font-weight: bolder;
+      margin-bottom: 10px;
+      text-align: center;
+     }
+   
+     >div:last-child {
+      width: 100%;
+      text-align: center;
+      color: rgba(82, 82, 82, 0.655)
+     }
+    }
+   }
+
+   .BackOrange{
+    width: 100%;
+    height: 900px;
+    position: absolute; 
+    z-index: -2;
+    background-color: var(--main-yellow); 
+   }
+
+   .section2{
+    box-sizing: border-box;
+    width:60%; 
+    margin: auto;
+    height: 900px; 
+    position: relative;
+   }
+
+   .img1{
+    width:70%;
+    height: auto;
+    aspect-ratio: 1.5/1;
+    background-image: url('./jhj-min.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin-left:10% ;
+    margin-top:15% ;
+
+   }
+
+   .circule1{
+    width:20%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: white; 
+    margin-left: 70%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 5%;
+   }
+
+   .circule2{
+    width:20%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: white; 
+    position: absolute;
+    z-index: -1;
+    margin-top: 50%;
+    background-image: linear-gradient(to top, transparent 20%, #e8b846 20%);
+    background-size: 20px 20px;
+    transform: rotate(140deg);
+   }
+
+   .pad{
+    padding: 30xp;
+   }
+
+   .WhiteBox{
+    width:350px;
+    height: auto;
+    background-color: white; 
+    position: absolute;
+    z-index: 2;
+    margin-top: 35%;
+    margin-left: 65%;
+    box-shadow: 0px 0px 75px -18px rgba(0,0,0,1);
+    
+    >.maintext{
+    font-size: 40px;
+    padding: 25px;
+    font-weight: bold;
+    }
+
+    >.text{
+    padding: 25px;
+    font-weight: bold;
+    color: rgba(82, 82, 82, 0.655);
+    }
+
+    >.Button{
+    margin: 25px;
+    background-color: var(--main-yellow);
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >.butText{
+        color: black;
+        font-weight: bold;
+        padding: 20px;
+        font-size: 12px;
+    }
+    }
+   }
+
+    .section3{
+    box-sizing: border-box;
+    width:60%; 
+    margin: auto;
+    height: 900px; 
+    position: relative;
+   }
+
+   .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    width: 80%;
+    margin: 10%;
+   }
+
+   .grid-item{
+    background-color: white;  
+    display: flex;
+    padding: 16px;
+    color: gray;
+    font-size: 20px;
+   }
+
+   .gridLine{
+    width: 200px;
+    height: 80px;
+    background-color: var(--main-yellow);
+    margin: 0px 20px 20px 0px;
+   }
+
+   .whiteBox2{
+    width:500px;
+    height: 350px; 
+    background-color: white; 
+    position: absolute;
+    box-shadow: 0px 0px 75px -18px rgba(0,0,0,1);
+    margin-left: 30%;
+   }
+
+   .maintext2{
+    padding: 30px;
+    font-size: 40px;
+    font-weight: bold;
+   }
+
+   .Lowertext2{
+    padding: 0px 30px 30px 30px;
+    font-size: 20px;
+    color: gray;
+   }
+
+   .button2{
+    margin-left: 25px;
+    background-color: var(--main-yellow);
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .Button2Text{
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 12px;
+   }
+
+
+   .pic1_1{
+    height: 350px;
+    position: absolute;
+    z-index: -1;
+    margin-left: 10%;
+    margin-top: 13%;
+   }
+
+   .pic2_1{
+    width: 450px; 
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    margin-left: 45%;
+    margin-top: 25%;
+   } 
+
+   .pic3_1{
+    width: 300px; 
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin-left: 28%;
+    margin-top: 50%;
+   }
+
+   .pic4_1{
+    background-image: url('./ffff.jpg');
+    width: 300px; 
+    height: auto;
+    aspect-ratio: 1/1.3;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin-left: 60%;
+    margin-top: 60%; 
+   }
+
+   .textINsec3{
+    color: gray;
+    width: 30%;
+    padding: 25px;
+    border-left: solid 10px gray;
+    margin-top: 90%;
+    margin-left: 10%;
+   }
+
+   .OrangeLine{
+    width: 100%;
+    height: 900px;
+    position: absolute; 
+    z-index: -2;
+    background-color: var(--main-yellow); 
+    margin-top: 35%;
+   }
+
+   .section4{
+    box-sizing: border-box;
+    width:60%; 
+    margin: auto;
+    height: 900px; 
+    position: relative;
+    margin-top: 35%;
+
+    >.pic1{
+        background-image: url('./pillow-with-lemons-yellow-armchair-interior-room_169016-16555.webp');
+        background-position: center;
+        background-size: cover;
+        width:44%;
+        aspect-ratio: 1/1.1;
+        position: absolute;
+        margin-top:5%;
+        margin-left:14%;
+
+    }
+    >.whiteBoxLL{
+        width:360px;
+        height: 480px; 
+        background-color: white; 
+        position: absolute;
+        z-index: 2;
+        box-shadow: 0px 0px 75px -18px rgba(0,0,0,1);
+        margin-top: 8%;
+        margin-left: 55%;
+    }
+   }
+
+   .circule3{
+    width:20%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: white; 
+    position: absolute;
+    z-index: 1;
+    margin-top: 45%;
+    margin-left: 5%;
+    background-image: linear-gradient(to top, transparent 20%, rgba(20, 20, 20, 0.1) 20%);
+    background-size: 20px 20px;
+    transform: rotate(140deg);
+   }
+
+   .button10{
+    margin-bottom: 20px;
+    margin-left: 25px;
+    background-color: var(--main-yellow);
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .circule4{
+    width:15%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgb(209, 209, 209); 
+    position: absolute;
+    z-index: 1;
+    margin-top: 3%;
+    margin-left: 80%;
+   }
+
+   .circule5{
+    width:50%;
+    height: 30%;
+    aspect-ratio: 1/1;
+    background-color: rgb(202, 202, 202); 
+    position: absolute;
+    z-index: -1;
+    margin-top: 35%;
+    margin-left: 40%;
+   }
+
+   .section5{
+    box-sizing: border-box;
+    width:60%; 
+    margin: auto;
+    height: 900px; 
+    position: relative;
+
+    >.pic1{
+        background-image: url('./gfgf.jpg');
+        background-position: center;
+        background-size: cover;
+        width:44%;
+        aspect-ratio: 2/1;
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+
+    >.pic2{
+        background-image: url('./gggg.jpg');
+        background-position: center;
+        background-size: cover;
+        width:44%;
+        aspect-ratio: 1.5/1;
+        position: absolute;
+        z-index: -1;
+        margin-top: 18%;
+        margin-left: 47%;
+    }
+
+    >.whiteBoxL{
+        width:400px;
+        height: 400px; 
+        background-color: white; 
+        position: absolute;
+        box-shadow: 0px 0px 75px -18px rgba(0,0,0,1);
+        margin-left: 25%;
+        margin-top: 40%;
+    }
+
+    >.pic3{
+        background-image: url('./fggg-min.jpg'); 
+        background-position: center;
+        background-size: cover;
+        width:40%;
+        aspect-ratio: 1.5/1;
+        position: absolute;
+        z-index: -1;
+        margin-top: 67%;
+        margin-left: 10%;
+    }
+
+    >.pic4{
+        background-image: url('./ffff.jpg'); 
+        background-position: center;
+        background-size: cover;
+        width:28%;
+        aspect-ratio: 1/1.6;
+        position: absolute;
+        margin-top: 55%;
+        margin-left: 65%;
+    }
+   }
+
+   .OrangeLine2{
+    width: 100%;
+    height: 700px;
+    position: absolute; 
+    z-index: -2;
+    background-color: var(--main-yellow); 
+    margin-top: 15%;
+   }
+
+
+   .section6{
+    box-sizing: border-box;
+    width:60%; 
+    margin: auto;
+    height: 700px; 
+    position: relative;
+    margin-top: 15%;
+
+    >.gridd{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+        row-gap: 20px;
+        column-gap: 20px;
+        width: 30%;
+        margin: 10%;
+        position: absolute;
+       }
+    
+       .grid-item{
+        background-color: rgb(58, 58, 58);  
+        display: flex;
+        flex-direction: column ;
+        padding: 16px;
+        color: gray;
+        font-size: 20px;
+        align-items: center;
+       }
+
+       .gridpic1{
+        width: 50px;
+        aspect-ratio: 1/1;
+       }
+ 
+       .gridMText{
+        color: white;
+        margin-top:20px ; 
+        font-size: 20px;
+       }
+
+       .gridUText{
+        color: rgb(190, 190, 190);
+        margin-top:10px ; 
+        margin-bottom:30px ; 
+        font-size: 10px;
+       }
+   }
+   .whitebox111{
+    width:600px;
+    height: 550px; 
+    background-color: white; 
+    position: absolute;
+    z-index: -1; 
+    box-shadow: 0px 0px 75px -18px rgba(0,0,0,1);
+    margin-left: 38%;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .Lowertext2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .nameinput{
+        background-color: rgb(209, 209, 209);
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 0px;
+    }
+
+    .emailinput{
+        background-color: rgb(209, 209, 209);
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 0px;
+    }
+
+    .Messageinput{
+        background-color: rgb(209, 209, 209);
+        margin-bottom: 0px;
+        height: 100px;
+        border: 0px;
+    }
+
+    .button3{
+        margin: 25px;
+        background-color: var(--main-yellow); 
+        width: 70%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+    
+       .Button3Text{
+        color: black;
+        font-weight: bold;
+        padding: 15px;
+        font-size: 12px;
+       }
+
+
+
+   
+
+
