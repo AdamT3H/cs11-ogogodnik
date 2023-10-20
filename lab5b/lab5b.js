@@ -97,3 +97,35 @@ const Task1 = () =>{
 
 
 
+
+
+
+    const Task6 = () =>{
+        const [side1Task6] = document.getElementsByClassName('side1_1Task6');
+
+        const side1Task6_value = side1Task6.value;
+
+        const length = side1Task6_value.split('').length;
+        console.log(length);
+
+        const length2 = length / 2;
+        console.log(length2);
+
+        const half1 = side1Task6_value.split('').slice (0,length2);
+        
+
+        const half2 = side1Task6_value.split('').slice (length2, length);
+
+        const half2rotatetd = half2.reverse();
+
+        if  (half1 == half2rotatetd){
+          document.getElementsByClassName("Unsver6")[0].innerText = "true";
+        }
+        if (half1 != half2rotatetd){
+         document.getElementsByClassName("Unsver6")[0].innerText = "folse";
+        }
+
+    }
+
+    document.getElementById('but6') 
+    .addEventListener('click', Task6);
