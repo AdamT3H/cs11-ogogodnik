@@ -1,3 +1,4 @@
+
 const Task1 = () =>{
     const [side1] = document.getElementsByClassName('side1_1');
 
@@ -208,7 +209,4 @@ const Task1 = () =>{
   }
   document.getElementById('but8') 
   .addEventListener('click', Task8);
-
-
-
 
