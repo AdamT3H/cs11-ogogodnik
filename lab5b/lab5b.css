@@ -75,7 +75,7 @@
     margin-bottom: 10px;
 }
 
-.contrTask2, .contrTask3, .contrTask5, .contrTask6, .contrTask7, .contrTask8{
+.contrTask2, .contrTask3, .contrTask5, .contrTask6, .contrTask7, .contrTask8, .contrTask9{
     width: 100%;
     height: auto;
     margin: 100px  0px;
@@ -86,7 +86,7 @@
     align-items: center;
 }
 
-.textTask2, .textTask3, .textTask5, .textTask6, .textTask7, .textTask8{
+.textTask2, .textTask3, .textTask5, .textTask6, .textTask7, .textTask8, .textTask9{
     width: 60%;
     background-color: gray;
     padding: 20px;
@@ -95,7 +95,7 @@
     font-family: 10px;
 }
 
-.side1Task2, .side1Task3, .side1Task5, .side1Task6 , .side1Task7, .side1Task8{
+.side1Task2, .side1Task3, .side1Task5, .side1Task6 , .side1Task7, .side1Task8, .side1Task9{
     margin: 20px 10px;
 }
 
@@ -107,12 +107,12 @@
     margin: 20px 10px;
 }
 
-.contrForq2, .contrForq3, .contrForq5, .contrForq6, .contrForq7, .contrForq8{
+.contrForq2, .contrForq3, .contrForq5, .contrForq6, .contrForq7, .contrForq8, .contrForq9{
     display: flex;
     flex-direction: unset;
 }
 
-.Unsver2, .Unsver3, .Unsver5, .Unsver6, .Unsver7, .Unsver8{
+.Unsver2, .Unsver3, .Unsver5, .Unsver6, .Unsver7, .Unsver8, .Unsver9{
     background-color: rgb(122, 122, 122);
     border-radius: 20px ;
     width: 30%;
@@ -120,7 +120,7 @@
     padding: 10px;
 }
 
-.side1_1Task2, .side1_1Task3, .side1_1Task5, .side1_1Task6, .side1_1Task7, .side1_1Task8{
+.side1_1Task2, .side1_1Task3, .side1_1Task5, .side1_1Task6, .side1_1Task7, .side1_1Task8, .side1_1Task9{
     border-bottom: solid 2px  rgb(148, 148, 148);
     border-top: solid 0px  rgb(148, 148, 148); 
     border-left: solid 0px  rgb(148, 148, 148); 
@@ -142,7 +142,7 @@
     padding: 7px;
 }
 
-.button2, .button3, .button5, .button6, .button7, .button8{
+.button2, .button3, .button5, .button6, .button7, .button8, .button9{
     padding: 10px;
     font-size: 15px;
     background-color:rgb(148, 148, 148);

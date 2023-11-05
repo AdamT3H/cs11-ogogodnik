@@ -210,3 +210,52 @@ const Task1 = () =>{
   document.getElementById('but8') 
   .addEventListener('click', Task8);
 
+
+  const Task9 = () =>{
+    const [side1Task9] = document.getElementsByClassName('side1_1Task9');
+
+    const side1Task9_value = side1Task9.value;
+
+    console.log ("Інпут:", side1Task9_value);
+
+    let a = 1, b = 1;
+
+    if (side1Task9_value == 1){
+
+      document.getElementsByClassName("Unsver9")[0].innerText = "true"; 
+
+      return true;
+
+    }
+
+    do {
+      const elem = a + b;
+
+      a = b;
+
+      b = elem
+
+      if (elem > side1Task9_value){
+
+        document.getElementsByClassName("Unsver9")[0].innerText = "folze";
+        
+        return false;
+
+      };
+
+      if (elem == side1Task9_value) {
+
+        document.getElementsByClassName("Unsver9")[0].innerText = "true";
+
+        return true;
+
+      }
+
+    } while (true);
+    
+    
+
+  }
+  document.getElementById('but9') 
+  .addEventListener('click', Task9);
+
