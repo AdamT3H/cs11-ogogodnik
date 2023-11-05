@@ -38,7 +38,7 @@ body {
     width:100%;
     height: auto;
     min-height: 740px;
-    background: url('./images/view-white-crumpled-paper.jpg');
+    background: url('./view-white-crumpled-paper.jpg');
    }
    #result-text{
     padding: 20px;
