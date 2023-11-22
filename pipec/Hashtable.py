@@ -1,32 +1,70 @@
-class Hashtsble:
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class linked_list:
     def __init__(self):
-        self.capasity = 10
-        self.table = [[] for _ in range(0, self.capasity)]
+        self.head = None
 
-    def HasingFunk(self, key):
-        Hashed_key = hash(key) % self.capasity
-        return Hashed_key
+    def append_ll(self, data):
+        new_node = Node(data)  
+        if self.head == None:
+            self.head = new_node
+            return
+
+        current_node = self.head
+        while(current_node.next):
+            current_node = current_node.next
+
+        current_node.next = new_node
+
+    def print_at_index(self, index):
+        current_node = self.head
+        position = 0
+        while(current_node != None and position != index):
+            position = position + 1 
+            current_node = current_node.next
+        print(current_node.data if current_node else 'Index not present') #Тернарний оператор
+
+    def print_by_data(self, data):
+        current_node = self.head
+        position = 1
+        while(current_node != None and data != current_node.data):
+            position = position + 1 
+            current_node = current_node.next
+        print('Data node -%s- is at position %s' % (current_node.data, position) if current_node else 'Data not present')
+
+    def printLL(self):
+        current_node = self.head
+        while(current_node):
+            print(current_node.data)
+            current_node = current_node.next
+
+
+
+
+class HashTable:
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.table = []
+        for i in range(self.capacity):
+            self.table.append(linked_list())
+
+    def hashing(self, key, data_ht):
+        index = self.capacity % key 
+        self.table[index].append_ll(data_ht)
+        self.table[index].printLL()
     
-    def set(self, key, value):
-        Hash_key = self.HasingFunk(key)
-        key_ex = False
-        slot = self.table[Hash_key]
-        for i, kv in slot:
-            k, v = kv
-            if key == k:
-                key_ex == True
-                break
+    def count(self):
+        count = 0
+        for i in self.table:
+            count += 1
+        print(count)
 
-            if key_ex:
-                slot[i] = ((key, value))
-            else:
-                slot.append((key, value))
-
-H = Hashtsble()
-H.set(1, 3)
-H.set(2, 4)
-H.set(3, 5)
-
-print(H.get(1))
-
-print(H.table)
+a = HashTable(10)
+print('Перший елемент з ключем 7')
+a.hashing(7, 'lbaalsdjks')
+a.count()
+print('Додаємо другий елемент з ключем 7')
+a.hashing(7, 'персики')
