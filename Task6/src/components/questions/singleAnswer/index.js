@@ -48,6 +48,7 @@ const SingleAnswerComponent = (props) => {
  const showAnswerOnClick = () => {
     setShowAnswer(true);
     setSelectedAnswer(props.correctAnswer);
+    showAnswerButtonRef.current.classList.remove('show');
   };
 
 
