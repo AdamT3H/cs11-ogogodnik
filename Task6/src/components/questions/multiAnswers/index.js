@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import './style.css';
 import * as uuid from 'uuid';
 
@@ -20,29 +20,47 @@ const isArrayEqual = (selected, correct) => {
  */
 const MultiAnswerComponent = (props) => {
 
- let selectedAnswerIndex = [];
+    const [userAttempts, setUserAttempts] = useState(0);
+    const [showAnswer, setShowAnswer] = useState(false);
+    let   [selectedAnswerIndex, setSelectedAnswer] = useState([]);
+
  const checkboxClick = (index, status) => {
   if (status) {
    selectedAnswerIndex.push(index);
   } else {
    selectedAnswerIndex = selectedAnswerIndex.filter(e => e === index);
   }
+
+
   wrongRef.current.classList.remove('selected');
   correctRef.current.classList.remove('selected');
  };
 
  const correctRef = useRef();
  const wrongRef = useRef();
+ const showAnswerButtonRef = useRef();
 
  const checkOnClick = () => {
   if (isArrayEqual(selectedAnswerIndex, props.correctAnswer)) {
    correctRef.current.classList.add('selected');
    wrongRef.current.classList.remove('selected');
+   showAnswerButtonRef.current.classList.remove('show');
   } else {
    wrongRef.current.classList.add('selected');
    correctRef.current.classList.remove('selected');
+   showAnswerButtonRef.current.classList.remove('show');
+   setUserAttempts(userAttempts + 1);
+  }
+
+  if (userAttempts >= 2) {
+    showAnswerButtonRef.current.classList.add('show');
   }
  };
+
+ const showAnswerOnClick = () => {
+    setShowAnswer(true);
+    setSelectedAnswer(props.correctAnswer);
+  };
 
  return (
   <div className='question single-answer'>
@@ -56,7 +74,7 @@ const MultiAnswerComponent = (props) => {
        type='checkbox'
        onClick={(e) => checkboxClick(i, e.currentTarget.checked)}
       />
-      <label for={id}>{answer}</label>
+      {props.correctAnswer.includes(i)&& showAnswer ? <label style={{color : "green"}} for={id}>{answer}</label> : <label for={id}>{answer}</label>}
      </div>);
     })}
    </div>
@@ -66,6 +84,10 @@ const MultiAnswerComponent = (props) => {
      <div ref={correctRef} className='correct'>correct</div>
      <div ref={wrongRef} className='wrong'>wrong</div>
     </div>
+
+    <div className= 'showAnswer' onClick={showAnswerOnClick} ref={showAnswerButtonRef}>
+          Show Answer
+        </div>
 
    </div>
   </div>

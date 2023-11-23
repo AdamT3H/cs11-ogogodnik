@@ -48,6 +48,26 @@
  background-color: red;
 }
 
+.showAnswer {
+    margin-right: 12em;
+    background-color: #6e7c97;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    text-transform: uppercase;
+   
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    transition: 0.25s;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+  
+.show {
+    opacity: 1;
+}
+
 .question.single-answer .check .button .correct.selected,
 .question.single-answer .check .button .wrong.selected {
  top: 0;

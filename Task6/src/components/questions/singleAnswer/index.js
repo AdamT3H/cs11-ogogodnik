@@ -15,7 +15,6 @@ const SingleAnswerComponent = (props) => {
  const [userAttempts, setUserAttempts] = useState(0);
  const [showAnswer, setShowAnswer] = useState(false);
  let   [selectedAnswerIndex, setSelectedAnswer] = useState(null);
- const [selectedAnswers, setSelectedAnswers] = useState(Array(props.answers.length).fill(false));
 
  const radioClick = (index) => {
   selectedAnswerIndex = index;
@@ -38,9 +37,10 @@ const SingleAnswerComponent = (props) => {
   } else {
    wrongRef.current.classList.add('selected');
    correctRef.current.classList.remove('selected');
+   showAnswerButtonRef.current.classList.remove('show');
    setUserAttempts(userAttempts + 1);
   }
-  if (userAttempts === 2) {
+  if (userAttempts >= 2) {
     showAnswerButtonRef.current.classList.add('show');
   }
  };
@@ -48,8 +48,6 @@ const SingleAnswerComponent = (props) => {
  const showAnswerOnClick = () => {
     setShowAnswer(true);
     setSelectedAnswer(props.correctAnswer);
-    const newSelectedAnswers = selectedAnswers.map((_, i) => i === props.correctAnswer);
-    setSelectedAnswers(newSelectedAnswers);
   };
 
 
@@ -71,10 +69,9 @@ const SingleAnswerComponent = (props) => {
        type='radio'
        name={`group-${qId}`}
        onClick={() => radioClick(i)}
-       checked={showAnswer ? selectedAnswers[i] : false}
        
       />
-      <label for={id}>{answer}</label>
+      {props.correctAnswer === i && showAnswer ? <label style={{color : "#1aff00"}} for={id}>{answer}</label> : <label for={id}>{answer}</label>}
      </div>);
     })}
    </div>
