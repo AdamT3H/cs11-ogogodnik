@@ -28,7 +28,7 @@ const MultiAnswerComponent = (props) => {
   if (status) {
    selectedAnswerIndex.push(index);
   } else {
-   selectedAnswerIndex = selectedAnswerIndex.filter(e => e === index);
+   selectedAnswerIndex = selectedAnswerIndex.filter(e => e !== index);
   }
 
 
@@ -73,6 +73,7 @@ const MultiAnswerComponent = (props) => {
        id={id}
        type='checkbox'
        onClick={(e) => checkboxClick(i, e.currentTarget.checked)}
+       checked={showAnswer && selectedAnswerIndex === i}
       />
       {props.correctAnswer.includes(i)&& showAnswer ? <label style={{color : "green"}} for={id}>{answer}</label> : <label for={id}>{answer}</label>}
      </div>);

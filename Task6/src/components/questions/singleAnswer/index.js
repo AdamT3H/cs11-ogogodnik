@@ -17,7 +17,7 @@ const SingleAnswerComponent = (props) => {
  let   [selectedAnswerIndex, setSelectedAnswer] = useState(null);
 
  const radioClick = (index) => {
-  selectedAnswerIndex = index;
+  setSelectedAnswer(index);
   wrongRef.current.classList.remove('selected');
   correctRef.current.classList.remove('selected');
   showAnswerButtonRef.current.classList.remove('show');
@@ -70,7 +70,10 @@ const SingleAnswerComponent = (props) => {
        type='radio'
        name={`group-${qId}`}
        onClick={() => radioClick(i)}
+       default = {selectedAnswerIndex === null}
+       checked={showAnswer && selectedAnswerIndex === i}
        
+ 
       />
       {props.correctAnswer === i && showAnswer ? <label style={{color : "#1aff00"}} for={id}>{answer}</label> : <label for={id}>{answer}</label>}
      </div>);
