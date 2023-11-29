@@ -60,7 +60,7 @@ const MultiAnswerComponent = (props) => {
  const showAnswerOnClick = () => {
     setShowAnswer(true);
     setSelectedAnswer(props.correctAnswer);
-  };
+ }
 
  return (
   <div className='question single-answer'>
@@ -68,14 +68,19 @@ const MultiAnswerComponent = (props) => {
    <div className='answers'>
     {props.answers.map((answer, i) => {
      const id = uuid.v1();
+     const checked= props.correctAnswer.includes(i) && showAnswer
      return (<div>
       <input
        id={id}
        type='checkbox'
        onClick={(e) => checkboxClick(i, e.currentTarget.checked)}
-       checked={showAnswer && selectedAnswerIndex === i}
+       defaultChecked = {checked}
+       checked = {checked ? true : undefined}
+       disabled = {showAnswer}
       />
-      {props.correctAnswer.includes(i)&& showAnswer ? <label style={{color : "green"}} for={id}>{answer}</label> : <label for={id}>{answer}</label>}
+      {checked 
+      ? <label style={{color : "#1aff00"}} for={id}>{answer}</label> 
+      : <label for={id}>{answer}</label>}
      </div>);
     })}
    </div>

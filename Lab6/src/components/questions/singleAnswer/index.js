@@ -64,18 +64,21 @@ const SingleAnswerComponent = (props) => {
    <div className='answers'>
     {props.answers.map((answer, i) => {
      const id = uuid.v1();
+     const checked= showAnswer && selectedAnswerIndex === i
      return (<div>
       <input
        id={id}
        type='radio'
        name={`group-${qId}`}
        onClick={() => radioClick(i)}
-       default = {selectedAnswerIndex === null}
-       checked={showAnswer && selectedAnswerIndex === i}
+       defaultChecked = {checked}
+       checked = {checked ? true : undefined}
        
  
       />
-      {props.correctAnswer === i && showAnswer ? <label style={{color : "#1aff00"}} for={id}>{answer}</label> : <label for={id}>{answer}</label>}
+      {checked 
+      ? <label style={{color : "#1aff00"}} for={id}>{answer}</label> 
+      : <label for={id}>{answer}</label>}
      </div>);
     })}
    </div>
