@@ -4,7 +4,7 @@ import GoodsContext from '../../context/goods.context';
 import GoodsComponent from '../goods';
 
 
-// 
+
 const CounterComponent = () => {
 
  const { data, addGoods, selectedGoods} = useContext(GoodsContext);
