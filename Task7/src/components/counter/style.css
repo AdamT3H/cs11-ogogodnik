@@ -27,7 +27,7 @@
  flex-wrap: wrap;
 }
 
-.selected{
+.goods.selected{
  border: 2px solid var(--main-gold);
  box-shadow: 0px 0px 27px 0 var(--main-gold);
  transform: scale(1.15);

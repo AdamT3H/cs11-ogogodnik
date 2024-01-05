@@ -10,9 +10,10 @@ const CounterComponent = () => {
  const { data, addGoods, selectedGoods} = useContext(GoodsContext);
  
  let start = null
+
  const AutoDetectButton = (props) =>{
 
-  let { arr, i = 0, sumforauto = 0, result = [], lastRemoved = null, combination = null } = props;
+  let { arr, i = 0, sumforauto = 0, result = []} = props;
 
 
   const newSum = sumforauto + arr[i].cost;
@@ -59,7 +60,7 @@ const CounterComponent = () => {
   }
 
 }
-
+ 
  const handleAutoDetect = () => {  
   data.sort((a, b) => a.cost - b.cost);
   console.log(data)
