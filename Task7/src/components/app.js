@@ -7,12 +7,13 @@ import GoodsMock from './goodsMock.json';
 import GoodsContext from '../context/goods.context';
 import CampComponent from './camp';
 
-const goods = GoodsMock.map(el => ({
- ...el,
- id: uuid.v1()
-}));
 
 const AppComponent = () => {
+
+ const goods = GoodsMock.map(el => ({
+    ...el,
+    id: uuid.v1()
+ }));
 
  const [data, setData] = useState(goods);
  const [selectedGoods, setSelectedGoods] = useState([]);
@@ -26,11 +27,6 @@ const AppComponent = () => {
  const removeGoods = (item) => {
   setSelectedGoods((prevSelectedGoods) => {
    return prevSelectedGoods.filter(el => {
-    // if (item.id === el.id) {
-    //  return false;
-    // } else {
-    //  return true;
-    // }
     return item.id !== el.id;
    });
   });
@@ -54,6 +50,7 @@ const AppComponent = () => {
      addGoods,
      removeGoods,
      removeAllGoods,
+     data
     }}>
      <CounterComp />
      <div className='goods-wrapper'>

@@ -1,5 +1,5 @@
 # варіант 6
-oriented_graph = {
+oriented_graph = {  #Створюємо матрицю суміжності
   'A': ['B', 'D', 'F', 'C'],
   'B': ['C', 'E', 'D'],
   'C': ['E'],
@@ -18,7 +18,7 @@ unoriented_graph = {
 }
 
 
-def bfs_oriented(oriented_graph, start):
+def bfs_oriented(oriented_graph, start):  
     visited = set()
     queue = [start]
     while queue:
