@@ -69,4 +69,4 @@ const AppComponent = () => {
  );
 };
 
-export default AppComponent;;
+export default AppComponent;

@@ -1,0 +1,36 @@
+
+[
+    {
+        "name": "Andriy",
+        "photo": "./images/1200x0.jpg",
+        "LastMessage": "Останнє повідомлення",
+        "date": "00:00",
+        "folder": ["All Chats"]
+    },
+
+    {
+        "name": "Yana",
+        "photo": "./images/1200x0.jpg",
+        "LastMessage": "Останнє повідомлення",
+        "date": "00:00",
+        "folder": ["All Chats"]
+    },
+
+    {
+        "name": "Сашка Унік",
+        "photo": "./images/1200x0.jpg",
+        "LastMessage": "Останнє повідомлення",
+        "date": "00:00",
+        "folder": ["All Chats", "University"]
+    },
+
+    {
+        "name": "Микола Яковлєв",
+        "photo": "./images/1200x0.jpg",
+        "LastMessage": "Останнє повідомлення",
+        "date": "00:00",
+        "folder": ["All Chats", "University"]
+    }
+
+
+]

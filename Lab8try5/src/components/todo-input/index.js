@@ -29,12 +29,6 @@ const ToDoInputComponent = () => {
 
     };
 
-    const updateInput = () => {
-
-        const reading = addRef.current.value;
-
-    };
-
 
 
     return (

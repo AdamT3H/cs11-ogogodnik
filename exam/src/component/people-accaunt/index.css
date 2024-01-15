@@ -1,0 +1,61 @@
+.accaunt img{
+    width: 15%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    padding: 10px;
+}
+
+.accaunt:hover{
+    background-color: rgba(255, 255, 255, 0.055);
+    border-radius: 10px;
+}
+
+.accaunt {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accaunt.selected{
+    background-color: rgb(179, 124, 230);
+    border-radius: 10px;
+
+}
+
+.nickContainer{
+    height: 50%; 
+    width: 100%;
+    box-sizing: border-box;
+    Font-family: MS Sans Serif, sans-serif;
+}
+
+.Name{
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.LastMessage{
+    color: gray;
+}
+
+.LastMessage.selected{
+    color: whitesmoke;
+}
+
+.Date{
+    Font-family: MS Sans Serif, sans-serif;
+    color: gray;
+    font-size: 12px;
+    align-self: flex-start;
+    margin: 20px;
+}
+
+.Date.selected{
+    color: whitesmoke;
+}

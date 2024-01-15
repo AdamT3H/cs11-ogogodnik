@@ -1,0 +1,89 @@
+.wrapper-people{
+    width: 415px;
+    height: 100vh;
+    background-color: #212121;
+}
+
+@media (max-width: 1000px) {
+    .wrapper-people {
+      display: none;
+    }
+}
+
+.settings{
+    width: 20px;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 10px ;
+    position: relative;
+    border-radius: 12px; 
+}
+
+.settings:hover{
+    background-color: #7e7e7e3a;
+}
+
+.search{
+    margin-top: 7px;
+    width: 289px;
+    height: 37px;
+    background-color: #181818;
+    border: 1px solid #313131;
+    background-image: url('zoom_3385033.png');
+    background-size: 20px 20px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding-left: 40px;
+    color:white;
+}
+
+.search:hover {
+    border-color: rgb(113, 117, 121);
+}
+
+.search::placeholder {
+    color: #999; 
+    font-size: 16px; 
+}
+
+.inputSection{
+    display: flex;
+}
+
+.folders{
+    display: flex;
+    margin-top: 5px;
+    border-bottom: 1px solid #181818;
+}
+
+.folder{
+    Font-family: MS Sans Serif, sans-serif;
+    padding: 15px 15px 10px 15px;
+    border-top-left-radius: 11px; 
+    border-top-right-radius: 11px;
+    color:gray;
+    font-weight:600;
+    height: 20px;
+}
+
+.folder:first-child{
+    margin-left: 10px;
+}
+
+.folder:hover{
+    background-color: rgba(166, 96, 223, 0.062);
+}
+
+.user img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#start{
+    color: rgb(179, 124, 230);
+}
