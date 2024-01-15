@@ -1,0 +1,29 @@
+.App {
+  background-color: #181818;
+  min-height: 100vh;
+  display: flex;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 500px;
+  max-width: 1670px;
+  margin: auto;
+  height: max(700px,100vh);
+  background-image: url('./2054934.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.wrapper-people{
+  width: 415px;
+  height: 100vh;
+  background-color: #212121;
+}
+
+.wrapper-chat{
+  width: 100%;
+  display: flex;
+}
